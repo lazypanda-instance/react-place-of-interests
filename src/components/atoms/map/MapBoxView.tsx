@@ -24,7 +24,7 @@ const MapBoxView = (props: Props) => {
             style: 'mapbox://styles/mapbox/streets-v11',
             accessToken: 'pk.eyJ1IjoibGF6eXBhbmRhdGVjaCIsImEiOiJjbDIwbmNzaWIweTBpM2tucmd2NWVmcmUyIn0.xHRYdqThrlxR2UqVXXwDGw',
             center: [longitude, latitude],
-            zoom: 10
+            zoom: 8
         });
         setMap(mapboxMapView);
 
@@ -35,7 +35,7 @@ const MapBoxView = (props: Props) => {
 
     return (
         <>
-        <CustomContainer ref={mapNode} style={{ width: "500px", height: "500px" }}></CustomContainer>
+        <CustomContainer ref={mapNode} style={{ width: "1000px", height: "400px" }}></CustomContainer>
         </>
     );
 }

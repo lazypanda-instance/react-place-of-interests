@@ -7,7 +7,8 @@ export default {
     },
 
     section: {
-      background: 'green'
+      background: '#D9F7E7',
+      text: "#B0A8B9"
     }
   };
   

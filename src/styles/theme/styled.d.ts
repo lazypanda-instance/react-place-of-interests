@@ -11,6 +11,7 @@ declare module 'styled-components' {
 
         section: {
             background: string;
+            text: string;
         }
     }
 }
