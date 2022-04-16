@@ -12,8 +12,6 @@ const MapBoxView = (props: Props) => {
     const [map, setMap] = useState<mapboxgl.Map>();
     const mapNode = useRef(null);
 
-    console.log('Map initialize');
-
     useEffect(() => {
         const node = mapNode.current;
         if (typeof window === 'undefined' || node === null) return;
@@ -32,7 +30,6 @@ const MapBoxView = (props: Props) => {
 
         return () => {
             mapboxMapView.remove();
-            console.log('Map removed');
         }
     }, [props.position]);
 
