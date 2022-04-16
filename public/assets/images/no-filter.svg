@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Home, search &amp; settings/no search/4px</title>
+    <g id="Icons/Home,-search-&amp;-settings/no-search/4px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Home,-search-&amp;-settings/search/Vector">
+            <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+            <path d="M39,68 C55.0162577,68 68,55.0162577 68,39 C68,22.9837423 55.0162577,10 39,10 C22.9837423,10 10,22.9837423 10,39 C10,55.0162577 22.9837423,68 39,68 Z M31,48 L48,31 M48,48 L31,31 M60,60 L89,89" id="Combined-Shape" stroke="#282828" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

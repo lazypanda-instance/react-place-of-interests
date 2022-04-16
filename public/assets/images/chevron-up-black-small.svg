@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Direction/chevron-up/4px colour mask</title>
+    <defs>
+        <path d="M11.5437577,8.92569305 C11.6481294,9.02476898 11.8173494,9.02476898 11.9217212,8.92569305 C12.0260929,8.82661712 12.0260929,8.6659833 11.9217212,8.56690737 L7.18898177,4.07430695 C7.08461002,3.97523102 6.91538998,3.97523102 6.81101823,4.07430695 L2.07827881,8.56690737 C1.97390706,8.6659833 1.97390706,8.82661712 2.07827881,8.92569305 C2.18265056,9.02476898 2.3518706,9.02476898 2.45624235,8.92569305 L7,4.61248547 L11.5437577,8.92569305 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/Direction/chevron-up/4px-colour-mask" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <rect id="Rectangle" mask="url(#mask-2)" transform="translate(7.000000, 7.000000) rotate(180.000000) translate(-7.000000, -7.000000) " x="0" y="0" width="14" height="14"></rect>
+    </g>
+</svg>

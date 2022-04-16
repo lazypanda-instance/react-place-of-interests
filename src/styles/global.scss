@@ -1,0 +1,33 @@
+@import './variables';
+
+html {
+    font-family: $font-regular;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+    font-family: $font-regular;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1284px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    @media screen and (min-width: 90.0625rem) {
+        max-width: 100%;
+        padding-left: 3.4375rem !important;
+        padding-right: 3.4375rem !important;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+}

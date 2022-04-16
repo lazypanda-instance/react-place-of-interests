@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="50" viewBox="0 0 151 50">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="150" height="49" x=".5" y=".5" stroke="#333" rx="24.5"/>
+        <text fill="#333" font-family="Roboto-Bold, Roboto" font-size="16" font-weight="bold">
+            <tspan x="46.555" y="30">Shop all</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Status/error-circle/Solid colour mask</title>
+    <defs>
+        <path d="M50,8.41666667 C72.9658408,8.41666667 91.5833333,27.0341592 91.5833333,50 C91.5833333,72.9658408 72.9658408,91.5833333 50,91.5833333 C27.0341592,91.5833333 8.41666667,72.9658408 8.41666667,50 C8.41666667,27.0341592 27.0341592,8.41666667 50,8.41666667 Z M50,65 C48.0670034,65 46.5,66.5670034 46.5,68.5 C46.5,70.4329966 48.0670034,72 50,72 C51.9329966,72 53.5,70.4329966 53.5,68.5 C53.5,66.5670034 51.9329966,65 50,65 Z M50,27 C48.3431458,27 47,28.3431458 47,30 L47,55 C47,56.6568542 48.3431458,58 50,58 C51.6568542,58 53,56.6568542 53,55 L53,30 C53,28.3431458 51.6568542,27 50,27 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/Status/error-circle/Solid-colour-mask" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Mask" x="0" y="0" width="100" height="100"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Group" mask="url(#mask-2)" fill="#282828">
+            <g id="COLOUR-MASK">
+                <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

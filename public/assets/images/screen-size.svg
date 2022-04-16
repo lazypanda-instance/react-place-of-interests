@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Devices/Device attributes/screen-size</title>
+    <g id="Icons/Devices/Device-attributes/screen-size" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Devices/Device-attributes/screen-size/Vector">
+            <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+            <path d="M11.6666667,6.33333333 L20.2395833,6.33333333 C24.709638,6.33333333 28.3333333,9.95702864 28.3333333,14.4270833 L28.3333333,19.90625 C28.3333333,24.3763047 24.709638,28 20.2395833,28 L11.6666667,28 L11.6666667,6.33333333 Z" id="Path" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20.000000, 17.166667) rotate(-90.000000) translate(-20.000000, -17.166667) "></path>
+            <line x1="15.8333333" y1="30.5" x2="15.8333333" y2="37.1666667" id="Path" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="24.1666667" y1="30.5" x2="24.1666667" y2="37.1666667" id="Path" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <polygon id="Rectangle" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(20.000000, 28.000000) rotate(-90.000000) translate(-20.000000, -28.000000) " points="17.5 18.8333333 22.5 18.8333333 22.5 37.1666667 17.5 37.1666667"></polygon>
+            <line x1="20" y1="2" x2="20" y2="8.66666667" id="Path" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

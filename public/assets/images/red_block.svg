@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Status/block/4px colour mask</title>
+    <defs>
+        <path d="M50,8.41666667 C72.9658408,8.41666667 91.5833333,27.0341592 91.5833333,50 C91.5833333,72.9658408 72.9658408,91.5833333 50,91.5833333 C27.0341592,91.5833333 8.41666667,72.9658408 8.41666667,50 C8.41666667,27.0341592 27.0341592,8.41666667 50,8.41666667 Z M77.9524335,24.8764421 L24.8764421,77.9524335 C31.5337212,83.9398982 40.3413756,87.5833333 50,87.5833333 C70.7567018,87.5833333 87.5833333,70.7567018 87.5833333,50 C87.5833333,40.3413756 83.9398982,31.5337212 77.9524335,24.8764421 Z M50,12.4166667 C29.2432982,12.4166667 12.4166667,29.2432982 12.4166667,50 C12.4166667,59.6583982 16.0599312,68.4658664 22.0471459,75.1230903 L75.1230903,22.0471459 C68.4658664,16.0599312 59.6583982,12.4166667 50,12.4166667 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/Status/block/4px-colour-mask" stroke="#bd0000" stroke-width="8" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Group" mask="url(#mask-2)" fill="#bd0000">
+            <g id="COLOUR-MASK">
+                <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+            </g>
+        </g>
+        <rect id="Rectangle" mask="url(#mask-2)" x="0" y="0" width="100" height="100"></rect>
+    </g>
+</svg>
