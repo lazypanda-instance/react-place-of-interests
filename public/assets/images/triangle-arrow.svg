@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
-    <path fill="#4A4D4E" fill-rule="evenodd" d="M7 11.9L0 3.5h14l-7 8.4z" clip-rule="evenodd"/>
-    <mask id="tkcnng28pa" width="14" height="9" x="0" y="3" maskUnits="userSpaceOnUse">
-        <path fill="#fff" fill-rule="evenodd" d="M7 11.9L0 3.5h14l-7 8.4z" clip-rule="evenodd"/>
-    </mask>
-    <g mask="url(#tkcnng28pa)">
-        <path fill="#282828" d="M0 0H14V14H0z"/>
-    </g>
-</svg>
