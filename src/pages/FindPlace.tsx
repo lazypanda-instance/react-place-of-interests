@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import MyMap from "../components/organisms/MyMap";
 import { getGeoData, IGeoLocation } from "../services/GeoService";
+import { useViewPortSize } from "../services/HelperService";
 import { PlaceSection } from "../styles/theme/global";
 
 const FindPlace = () => {
@@ -14,14 +16,22 @@ const FindPlace = () => {
         getMyCurrentPosition();
     }, []);
 
+    let { windowWidth, isMobile } = useViewPortSize();
+
 
     return (
         <PlaceSection>
             {currentPosition && 
-                <div>
-                    <h1>My Place - {currentPosition?.latitude}, {currentPosition?.longitude} </h1>
-                    <MyMap position={currentPosition}></MyMap>
-                </div>
+                <Container fluid>
+                    <Row>
+                        <Col xs={12} md={6} lg={6}>
+                            <MyMap position={currentPosition}></MyMap>
+                        </Col>
+                        <Col>
+                            <>Place details - News - nearest place to visit</>
+                        </Col>
+                    </Row>
+                </Container>
             }
         </PlaceSection>
     );

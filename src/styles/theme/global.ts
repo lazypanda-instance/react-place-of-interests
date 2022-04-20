@@ -23,7 +23,6 @@ export const ThemeContainer = styled.div`
 export const CustomContainer = styled.div``;
 
 export const PlaceSection = styled.section`
-  padding: 5px;
   background: ${props => props.theme.section.background};
   color: ${props => props.theme.section.text};
 `;

@@ -35,7 +35,7 @@ const MapBoxView = (props: Props) => {
 
     return (
         <>
-        <CustomContainer ref={mapNode} style={{ width: "1000px", height: "400px" }}></CustomContainer>
+        <CustomContainer ref={mapNode} style={{ width: "100%", height: "400px" }}></CustomContainer>
         </>
     );
 }
