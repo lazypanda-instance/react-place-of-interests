@@ -1,10 +1,9 @@
 import { Helmet } from 'react-helmet';
 import {
-    BrowserRouter as Router,
     Route,
     Routes
 } from "react-router-dom";
-import { Suspense, useCallback, useContext } from "react";
+import { Suspense, useCallback, useEffect } from "react";
 import FindPlace from '../../pages/FindPlace';
 import Navbar from 'react-bootstrap/Navbar'
 import { Container } from 'react-bootstrap';
@@ -14,9 +13,11 @@ import green from '../../styles/theme/green';
 import light from '../../styles/theme/light';
 import dark from '../../styles/theme/dark';
 import { ThemeContainer } from '../../styles/theme/global';
-import { PlaceThemeContext } from '../../context/ThemeContext';
+import { useThemeContext } from '../../context/ThemeContext';
 
-const Headers = () => {
+const Headers = (props: any) => {
+    const { getUserConfirmation } = props;
+
     const themeArray: IThemeConfig[] = [
         {
             themeName: 'green',
@@ -35,11 +36,22 @@ const Headers = () => {
         }
     ];
 
-    const themeContext = useContext(PlaceThemeContext);
+    const themeContext = useThemeContext();
 
     const themeSlection = useCallback((type: string) => {
         const selectedTheme: IThemeConfig = themeArray.filter(theme => theme.themeName === type)[0];
         themeContext.setNewTheme(selectedTheme.themeValue);
+    }, []);
+
+    const onBackButtonClick = () => {
+        getUserConfirmation("Do you want to leve the application?");
+    };
+
+    useEffect(() => {
+        window.addEventListener("popstate", onBackButtonClick);
+        return () => {
+            window.removeEventListener("popstate", onBackButtonClick);
+        };
     }, []);
 
     return (
@@ -47,28 +59,27 @@ const Headers = () => {
             <Helmet>
                 <title>My Place of Interests</title>
             </Helmet>
-            <Router>
-                <Navbar sticky='top' bg="light" expand={false}>
-                    <Container fluid>
-                        <Navbar.Brand href="/">My Place of Interests</Navbar.Brand>
 
-                        <ThemeContainer>
-                            {themeArray.map((theme: IThemeConfig, index: number) => (
-                                <Box type={theme.themeName} 
-                                     boxColor={theme.themeColor}
-                                     onBoxClick={themeSlection}
-                                     key={index}></Box>
-                            ))}
-                        </ThemeContainer>
-                    </Container>
-                </Navbar>
+            <Navbar sticky='top' bg="light" expand={false}>
+                <Container fluid>
+                    <Navbar.Brand href="/">My Place of Interests</Navbar.Brand>
 
-                <Suspense fallback="Loading...">
-                    <Routes>
-                        <Route path='/' element={<FindPlace />}></Route>
-                    </Routes>
-                </Suspense>
-            </Router>
+                    <ThemeContainer>
+                        {themeArray.map((theme: IThemeConfig, index: number) => (
+                            <Box type={theme.themeName}
+                                boxColor={theme.themeColor}
+                                onBoxClick={themeSlection}
+                                key={index}></Box>
+                        ))}
+                    </ThemeContainer>
+                </Container>
+            </Navbar>
+
+            <Suspense fallback="Loading...">
+                <Routes>
+                    <Route path='/' element={<FindPlace />}></Route>
+                </Routes>
+            </Suspense>
         </>
     );
 }

@@ -1,14 +1,14 @@
 import Headers from "./Header";
 
-type Props = {
-    children: React.ReactNode
-}
+// type Props = {
+//     children: React.ReactNode
+// }
 
-const Layout = ({children}: Props) => {
+const Layout = (props: any) => {
     return (
         <>
-            <Headers />
-            {children}
+            <Headers {...props}/>
+            {props.children}
         </>
     );
 }

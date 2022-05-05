@@ -18,10 +18,7 @@ const FindPlace = () => {
     return (
         <PlaceSection>
             {currentPosition && 
-                <div>
-                    <h1>My Place - {currentPosition?.latitude}, {currentPosition?.longitude} </h1>
-                    <MyMap position={currentPosition}></MyMap>
-                </div>
+                <MyMap position={currentPosition}></MyMap>
             }
         </PlaceSection>
     );

@@ -3,7 +3,7 @@ export default {
   
     colors: {
       background: '#59ab64',
-      text: '#fff'
+      text: 'red'
     },
 
     section: {
